@@ -1,0 +1,170 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body{
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.nav-bar{
+  background-color: #242424;
+  text-align: right;
+}
+
+.nav-bar ul{
+  margin-right: 200px;
+  display: inline-flex;
+  color: white;
+  list-style: none;
+}
+
+.nav-bar ul li{
+  text-align: center;
+  width: 110px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  transition : background-color 0.3s;
+}
+
+.nav-bar ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+.nav-bar ul li:hover{
+  background-color: #050505;
+}
+
+.logo{
+  height: 12%;
+  width: 12%;
+  float: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 200px;
+}
+
+.sub-menu-1{
+  display: none;
+}
+
+.nav-bar ul li:hover .sub-menu-1{
+  display: block;
+  position: absolute;
+  background-color: #050505;
+  //margin-top: 15px;
+  margin-left: -10px;
+}
+
+.nav-bar ul li:hover .sub-menu-1 ul{
+  display: block;
+  margin: 10px;
+}
+
+.nav-bar ul li:hover .sub-menu-1 ul li{
+  width: 210px;
+  text-align: left;
+  border-bottom: 1px solid white;
+}
+
+.nav-bar ul li:hover .sub-menu-1 ul li:last-child{
+  border-bottom: none;
+}
+
+.nav-bar ul li:hover .sub-menu-1 ul li a:hover{
+  color: white;
+
+}
+.nav-bar ul li:hover .sub-menu-1 ul li a:hover{
+  color: red;
+  transition: color 1s;
+}
+
+footer{
+  background-color: #242424;
+  bottom: 0;
+
+}
+
+footer p{
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+
+}
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: black;
+}
+.tab button {
+  background-color: grey;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+.tab button:hover {
+  background-color: #ddd;
+}
+.tab button.active {
+  background-color: #ccc;
+}
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+ h5
+ {
+   font-size: 15px;
+
+ }
+.head-image img{
+
+   width: 100%;
+   display: block;
+border bottom: 5px solid #0c7971;
+ }
+
+ .tabcontent{
+  text-align: center;
+ }
+h3{
+  text-decoration: underline;
+}
+.btn {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  width: auto;
+}
+.btn:hover {
+  background-color: grey;
+}
+#container {
+   height:100%;
+}
+#container {
+   min-height:100%;
+   position:relative;
+}

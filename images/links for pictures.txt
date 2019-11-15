@@ -1,0 +1,5 @@
+contacts_img = https://rmsv2.iium.edu.my/img/login-bg.jpg
+papers_img=
+https://flagship.iium.edu.my/flagship2/wp-content/uploads/sites/3/2019/02/cropped-IMG_2650-1.jpg
+fees_img = 
+https://iiumproperties.com/wp-content/uploads/2016/06/bustan-al-jamiah.jpg

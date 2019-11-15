@@ -1,0 +1,140 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body{
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.nav-bar{
+  background-color: #242424;
+  text-align: right;
+}
+
+.nav-bar ul{
+  margin-right: 200px;
+  display: inline-flex;
+  color: white;
+  list-style: none;
+}
+
+.nav-bar ul li{
+  text-align: center;
+  width: 110px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  transition: background-color 0.3s;
+}
+
+.nav-bar ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+.nav-bar ul li:hover{
+  background-color: #050505;
+}
+
+.logo{
+  height: 12%;
+  width: 12%;
+  float: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 200px;
+}
+
+.sub-menu-1{
+  display: none;
+}
+
+.nav-bar ul li:hover .sub-menu-1{
+  display: block;
+  position: absolute;
+  background-color: #050505;
+  //margin-top: 15px;
+  margin-left: -10px;
+}
+
+.nav-bar ul li:hover .sub-menu-1 ul{
+  display: block;
+  margin: 10px;
+}
+
+.nav-bar ul li:hover .sub-menu-1 ul li{
+  width: 210px;
+  text-align: left;
+  border-bottom: 1px solid white;
+}
+
+.nav-bar ul li:hover .sub-menu-1 ul li:last-child{
+  border-bottom: none;
+}
+
+.nav-bar ul li:hover .sub-menu-1 ul li a:hover{
+  color: red;
+  transition: color 0.3s;
+}
+
+h2{
+  text-align: center;
+  font-size: 20px;
+}
+
+div[class="content"]{
+  margin: auto;
+  max-width: 500px;
+  font-family: sans-serif;
+  font-size: 17px;
+  color:#696969;
+}
+
+#registerimg{
+  width: 100%;
+  display: block;
+  border-bottom: 5px solid #0c7971;
+}
+
+#payment{
+  text-decoration: none;
+}
+
+#conference{
+  text-decoration: none;
+  text-align: center;
+}
+
+#workshop{
+  text-decoration: none;
+}
+
+#pleaseNote{
+  text-align: center;
+}
+
+#email{
+  text-decoration: none;
+}
+
+footer{
+  background-color: #242424;
+  bottom: 0;
+}
+
+footer p{
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+
+}
