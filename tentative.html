@@ -30,7 +30,7 @@
             <div class="sub-menu-1">
                 <ul>
                     <li><a href="tentative.html">CONFERENCE PROGRAMMES</a></li>
-                    <li><a href="speaker.html">KEYNOTE SPEAKERS</a></li>
+                    <li><a href="#">KEYNOTE SPEAKERS</a></li>
                 </ul>
             </div>
         </li>
@@ -53,15 +53,14 @@
 
 
   <div class="tab">
-  <button class="tablinks" onclick="openDay(event, 'Day1')" >Day 1</button>
+  <button class="tablinks" onclick="openDay(event, 'Day1')" id="defaultOpen" >Day 1</button>
   <button class="tablinks" onclick="openDay(event, 'Day2')">Day 2</button>
   <button class="tablinks" onclick="openDay(event, 'Day3')">Day 3</button>
 </div>
 
 
-</div>
-
 <div id="Day1" class="tabcontent">
+
   <h2>Day 1</h2><br><br>
   <h3>08:00 a.m</h3>
   <p>Conference Registration <br>
@@ -251,7 +250,9 @@ ROOM 4</p><br>
         <p>Copyright ICT4M 2020</p>
     </footer>
 
-    <script> function openDay(evt, noDay) {
+    <script>
+    document.getElementById("defaultOpen").click();
+    function openDay(evt, noDay) {
       var i, tabcontent, tablinks;
       tabcontent = document.getElementsByClassName("tabcontent");
       for (i = 0; i < tabcontent.length; i++) {
@@ -263,6 +264,8 @@ ROOM 4</p><br>
       }
       document.getElementById(noDay).style.display = "block";
       evt.currentTarget.className += " active";
+
+
     }</script>
   </body>
 </html>
