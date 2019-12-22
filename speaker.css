@@ -7,6 +7,8 @@ body{
   font-family: sans-serif;
   box-sizing: border-box;
 
+
+
 }
 
 .nav-bar{
@@ -86,6 +88,7 @@ body{
   color: white;
   transition: color 0.3s;
 }
+
 
 .nav-bar ul li:hover .sub-menu-1 ul li a:hover{
   color: red;

@@ -4,12 +4,18 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="style_payment.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    $("form").submit(function(){
+     });
+    });
+    </script>
   </head>
   <body>
 
     <div class="nav-bar">
-      <a href="index.html">
-      <img class="logo" src="ICT4M_logo.png" alt="logo" ></a>
+      <img class="logo "src="ICT4M_logo.png" alt="logo">
       <ul>
         <li><a href="#">SUBMISSION</a>
             <div class="sub-menu-1">
@@ -24,7 +30,7 @@
             <div class="sub-menu-1">
                 <ul>
                     <li><a href="tentative.html">CONFERENCE PROGRAMMES</a></li>
-                    <li><a href="speaker.html">KEYNOTE SPEAKERS</a></li>
+                    <li><a href="#">KEYNOTE SPEAKERS</a></li>
                 </ul>
             </div>
         </li>
@@ -43,6 +49,7 @@
     </div>
 
     <div class="content">
+      <form action="" name="form1" onsubmit="required()">
       <br><br><br>
          <h3><span style="color: red">Econference Register</span></h3><br><br><br>
          <p><strong>Event Name   :   </strong>International Conference of Information & Communication Technology for The Muslim World</p><br><br>
@@ -71,22 +78,28 @@
           <p><strong>Email<span style="color: red">*</span>   :   </strong><input type="text" name="email" ></p><br><br><br>
 
           <p id="pay"><strong>Payment via : </strong></p><br>
-          <p id="card"><input type="radio" name="credit card"></p>
+          <p id="card"><input type="radio" name="radio"></p>
            <p style="text-align:center;"><img src="mastercard.png" id="creditcard" ></p>
-          <p id="pay"><input type="radio" name="fpx" ></p>
+          <p id="pay"><input type="radio" name="radio" ></p>
            <p style="text-align:center;"><img src="fpx.png" id="fpx"></p><br>
-          <p style="text-align:center;"><button type="button" name="submit" >Submit</button></p><br><br>
+          <p style="text-align:center;"><input type="submit" id="submit" name="submit" value="Submit"></input></p><br><br>
           <p style="text-align:center;"><img src="list of credit card.png" ></p><br><br><br>
 
 
 
 
 
+    </form>
     </div>
 
 
     <footer>
         <p>Copyright ICT4M 2020</p>
     </footer>
+
+    <script src="payment.js">
+    </script>
+
+
   </body>
 </html>

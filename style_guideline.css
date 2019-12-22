@@ -6,6 +6,7 @@
 body{
   font-family: sans-serif;
   box-sizing: border-box;
+
 }
 
 .head-image img{
@@ -91,12 +92,16 @@ body{
 }
 
 .content p {
-  font-family: Time New Roman;
-  margin-left: 20%;
+  font-family: sans-serif;
+  margin-left: 5%;
   margin-right: 20%;
   margin-top: 5%;
   margin-bottom: 5%;
   text-align: justify;
+  padding-left: 10%;
+  color: white;
+
+
 }
 
 .content u{
@@ -111,18 +116,56 @@ body{
 footer{
   background-color: #242424;
   bottom: 0;
+  text-align: center;
+
 }
 
 footer p{
   color: white;
   padding-top: 5px;
-  padding-bottom: 3px;
+  padding-bottom: 5px;
+  border-right: 5100px;
   text-align: center;
 
 }
+.accordion {
+  background-color: #242424;
+  color: white;
+  margin-left: 150px;
+  margin-bottom: 0px;
+  cursor: pointer;
+  padding: 10px;
+  width: 80%;
+  height: 50px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  position: center;
+}
 
-.head-image img{
-  width: 100%;
-  display: block;
-  border-bottom: 5px solid #0c7971;
+.active, .accordion:hover {
+  color: red;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  margin-left: 150px;
+  background-color: grey;
+  overflow: hidden;
+  width: 77.6%;
+  transition: max-height 0.2s ease-out;
 }

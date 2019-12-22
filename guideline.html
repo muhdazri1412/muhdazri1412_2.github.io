@@ -4,12 +4,17 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="style_guideline.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+
+
   </head>
   <body>
 
     <div class="nav-bar">
-      <a href="index.html">
-      <img class="logo" src="ICT4M_logo.png" alt="logo" ></a>
+      <img class="logo "src="ICT4M_logo.png" alt="logo">
       <ul>
         <li><a href="#">SUBMISSION</a>
             <div class="sub-menu-1">
@@ -49,7 +54,7 @@
     <div class="content">
 
 
-    <p align = "center" style="font-size:125%;">All paper submissions will be handled electronically. Papers must be submitted electronically in DOC format
+<!--    <p align = "center" style="font-size:200%;">All paper submissions will be handled electronically. Papers must be submitted electronically in DOC format
     at <u style="color: #ff0000">easychair</u>. Submitted papers must not substantially overlap with papers that have been published or that
     are simultaneously submitted to a <u style="color: #ff0000">journal</u> or a conference with proceedings. Submitted papers will be peer
     reviewed and carefully evaluated based on originality, significance, technical soundness, and clarity of
@@ -88,8 +93,76 @@
     </p>
    </div>
 
+
+-->
+
+          <br>
+          <br>
+          <button class="accordion"><strong>Section 1</strong></button>
+           <div class="panel">
+             <p text-align = "center" style="font-size:150%;">All paper submissions will be handled electronically. Papers must be submitted electronically in DOC format
+                at <u style="color: #ff0000">easychair</u>. Submitted papers must not substantially overlap with papers that have been published or that
+                are simultaneously submitted to a <u style="color: #ff0000">journal</u> or a conference with proceedings. Submitted papers will be peer
+                reviewed and carefully evaluated based on originality, significance, technical soundness, and clarity of
+                exposition.
+
+           </div>
+           <br>
+           <br>
+          <button class="accordion"><strong>Section 2</strong></button>
+           <div class="panel">
+
+           <p text-align = "center" style="font-size:150%;">
+               The submitted papers must be between 4-6 pages.  To facilitate the paper’s double-blind peer review
+               process, authors should make efforts to ensure that information about the authors’ identities do not appear
+               anywhere in the text-body of the paper and must follow the <u style="color: #ff0000">guidelines</u>.</p>
+           </div>
+           <br>
+           <br>
+           <button class="accordion"><strong>Section 3</strong></button>
+           <div class="panel">
+
+           <p text-align = "center" style="font-size:150%;">Upon acceptance, at least one of the authors listed in the paper must submit the final paper, attend the
+           conference and present the paper according to the schedule of the conference. In the event that the presenter
+           is unable to attend the conference for any reasons, your accepted paper will not be considered for submission
+           of the proceeding to the <strong>IEEE Xplore</strong>.</p>
+
+           <p text-align = "center" style="font-size:150%;">Accepted papers after further revisions will be invited for publications in selected journals. Please direct any
+           questions about the paper submission process to the program chair at <a href="ict4m@iium.edu.my">ict4m@iium.edu.my.</a>.</p>
+           </div>
+           <br>
+           <br>
+           <button class="accordion"><strong>Section 4</strong></button>
+           <div class="panel">
+
+           <p text-align = "center" style="font-size:150%;">Papers that are accepted must be presented at the conference, either by the authors themselves or via a proxy.
+           In case a paper is not presented at the conference, it shall be deemed a <span style="color: #ff0000">‘no-show’</span>. Only presented papers
+           will be submitted for indexing. <span style="color: #ff0000">No refund of the paid fees</span> may be claimed by the <span style="color: #ff0000">‘no-show’</span> author.</p>
+
+
+           </div>
+
+           <script>
+
+           var acc = document.getElementsByClassName("accordion");
+           var i;
+
+           for (i = 0; i < acc.length; i++) {
+               acc[i].addEventListener("click", function() {
+                   this.classList.toggle("active");
+           var panel = this.nextElementSibling;
+               if (panel.style.display === "block") {
+                   panel.style.display = "none";
+           } else {
+                   panel.style.display = "block";
+                  }
+               });
+
+}
+          </script>
+
     <footer>
-        <p>Copyright ICT4M 2020</p>
+        <p text-align = "center" >Copyright ICT4M 2020</p>
     </footer>
   </body>
 </html>

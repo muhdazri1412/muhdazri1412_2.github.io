@@ -115,7 +115,8 @@ input[type="text"]{
   padding: 3px 33px;
 }
 
-button[type="button"]{
+
+input[type="submit"]{
   padding: 5px 33px;
 }
 
@@ -130,9 +131,4 @@ footer p{
   padding-bottom: 5px;
   text-align: center;
 
-}
-.head-image img{
-  width: 100%;
-  display: block;
-  border-bottom: 5px solid #0c7971;
 }

@@ -167,6 +167,30 @@ footer p{
   padding-left: 0px;
   line-height: 30px;
 }
+
+#countdown{
+  text-align: center;
+  font-size: 3em;
+  color: #5c5c5c;
+  border: 1px solid #cacccc;
+  margin-top: 30px;
+  background-color: white;
+}
+
+.countdown{
+  margin-top: 30px;
+  margin-left: 400px;
+  margin-right: 400px;
+  margin-bottom: 50px;
+}
+
+.social{
+  margin-top: 30px;
+  margin-left: 400px;
+  margin-right: 400px;
+  margin-bottom: 50px;
+}
+
 /*.container{
   width: 700px;
   height: 250px;
