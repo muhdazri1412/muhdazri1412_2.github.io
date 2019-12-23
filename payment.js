@@ -40,14 +40,11 @@ function required()
 function Check1() {
     if (document.getElementById('chkCredit').checked) {
         document.getElementById('ifCredit').style.visibility = 'visible';
+        document.getElementById('ifFpx').style.visibility = 'hidden';
     }
-    else document.getElementById('ifCredit').style.visibility = 'hidden';
-
-}
-function Check2() {
-    if (document.getElementById('chkFpx').checked) {
-        document.getElementById('ifFpx').style.visibility = 'visible';
+    else
+    {
+      document.getElementById('ifCredit').style.visibility = 'hidden';
+      document.getElementById('ifFpx').style.visibility = 'visible';
     }
-    else document.getElementById('ifFpx').style.visibility = 'hidden';
-
-}
+  }
