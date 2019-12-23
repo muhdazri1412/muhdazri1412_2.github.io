@@ -92,7 +92,7 @@ body{
 }
 
 .content p {
-  font-family: sans-serif;
+  font: calibri math;
   margin-left: 5%;
   margin-right: 20%;
   margin-top: 5%;
@@ -115,19 +115,11 @@ body{
 
 footer{
   background-color: #242424;
-  bottom: 0;
-  text-align: center;
+  margin-bottom:-100px;
 
 }
 
-footer p{
-  color: white;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  border-right: 5100px;
-  text-align: center;
 
-}
 .accordion {
   background-color: #242424;
   color: white;
@@ -143,10 +135,12 @@ footer p{
   font-size: 15px;
   transition: 0.4s;
   position: center;
+
 }
 
 .active, .accordion:hover {
   color: red;
+
 }
 
 .accordion:after {
@@ -155,7 +149,9 @@ footer p{
   font-weight: bold;
   float: right;
   margin-left: 5px;
+  transition: 1.0s;
 }
+
 .active:after {
   content: "\2212";
 }
@@ -167,5 +163,12 @@ footer p{
   background-color: grey;
   overflow: hidden;
   width: 77.6%;
-  transition: max-height 0.2s ease-out;
+  transition: max-height 1s ease-out;
+}
+
+#footer{
+  color: white;
+  padding-left: 600px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }

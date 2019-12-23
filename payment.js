@@ -36,3 +36,18 @@ function required()
       return true;
   }
 }
+
+function Check1() {
+    if (document.getElementById('chkCredit').checked) {
+        document.getElementById('ifCredit').style.visibility = 'visible';
+    }
+    else document.getElementById('ifCredit').style.visibility = 'hidden';
+
+}
+function Check2() {
+    if (document.getElementById('chkFpx').checked) {
+        document.getElementById('ifFpx').style.visibility = 'visible';
+    }
+    else document.getElementById('ifFpx').style.visibility = 'hidden';
+
+}

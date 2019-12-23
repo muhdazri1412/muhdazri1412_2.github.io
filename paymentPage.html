@@ -31,7 +31,7 @@
             <div class="sub-menu-1">
                 <ul>
                     <li><a href="tentative.html">CONFERENCE PROGRAMMES</a></li>
-                    <li><a href="#">KEYNOTE SPEAKERS</a></li>
+                    <li><a href="speaker.html">KEYNOTE SPEAKERS</a></li>
                 </ul>
             </div>
         </li>
@@ -76,15 +76,28 @@
           <p><strong>Organization<span style="color: red">*</span>   :   </strong><input type="text" name="org" ></p><br><br>
           <p><strong>Contact No<span style="color: red">*</span>   :   </strong><input type="text" name="phoneNo" ></p><br><br>
           <p><strong>Fax No   :   </strong><input type="text" name="faxNo" ></p><br><br>
-          <p><strong>Email<span style="color: red">*</span>   :   </strong><input type="text" name="email" ></p><br><br><br>
+          <p><strong>Email<span style="color: red">*</span>   :   </strong><input type="text" name="email" ></p><br><br>
+          <div id="ifCredit" style="visibility: hidden">
+          <p><strong>Billing address<span style="color: red">*</span>   :   </strong><input type="text" name="billing" ></p><br><br><br></div>
+
 
           <p id="pay"><strong>Payment via : </strong></p><br>
-          <p id="card"><input type="radio" name="radio"></p>
+          <p id="card"><input type="radio" name="radio" id="chkCredit" onClick="Check1();"></p>
            <p style="text-align:center;"><img src="mastercard.png" id="creditcard" ></p>
-          <p id="pay"><input type="radio" name="radio" ></p>
-           <p style="text-align:center;"><img src="fpx.png" id="fpx"></p><br>
+          <p id="pay"><input type="radio" name="radio" id="chkFpx" onClick="Check2();" ></p>
+           <p style="text-align:center;"><img src="fpx.png" id="fpx" ></p><br>
+           <div id="ifFpx" style="visibility: hidden">
+             <p><strong>Select Bank   :   </strong><select aria-label="Option" id="select"><optgroup>
+               <option selected>-Select One-</option>
+               <option value="1">Affin Bank</option>
+               <option value="1">Maybank</option>
+               <option value="1">Bank Islam</option>
+               </optgroup></select></p><br><br>
+               <p><strong>Email<span style="color: red">*</span>   :   </strong><input type="text" name="email" ></p><br><br>
+           </div>
           <p style="text-align:center;"><input type="submit" id="submit" name="submit" value="Submit"></input></p><br><br>
           <p style="text-align:center;"><img src="list of credit card.png" ></p><br><br><br>
+
 
 
 
