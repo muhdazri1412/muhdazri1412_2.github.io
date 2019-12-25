@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="StyleFees.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+ <script src="https://unpkg.com/scrollreveal"></script>
+ <script src = "java/currency.js"></script>
   </head>
   <body>
 
@@ -45,7 +47,6 @@
     </div>
 
           <img src="fees_img.jpg" alt="">
-
 
         <div class="content">
 
@@ -117,37 +118,32 @@
       <br><br>
 
       <div class="content">
-        <div class="toggler">
-          <div id="effect" class="color effect style">
-            <h3 class="color effect style">Additional price !</h3>
+          <div class="popup">
 
     <br><br>
     <p>* Additional papers from the same presenter will be charged <strong>RM500
-    per paper / USD 125 </strong>(up to 2 papers only).<br></p>
+    per paper / USD 125 </strong>(up to 2 papers only).</p>
     <p>* A student presenter must provide proof of student status, such as
-    student identification during registration.<br></p>
+    student identification during registration.</p>
     <p>* Conference registration includes access to all parallel sessions,
     invited speakers, meals, conference kit and a copy of the conference
-    proceedings. <br></p><br>
-
-    </div>
+    proceedings.</p><br>
   </div>
 
         <br><br><br><br><br><br>
+      </div>
 
-        <button id="button" class="color effect style">Toggle Effect</button>
-        <br><br><br>
+      <script>
+        ScrollReveal().reveal('.popup', {duration:3000});
+      </script>
 
       <div id='gcw_mainConverter' class="gcw_mainConverter"></div><br><br><br>
 
     </div>
-    </div>
   </div>
 </div>
 
-  <script src = "java/currency.js">
-
-  </script>
+<script src = "java/currency.js"></script>
 
     <footer>
         <p>Copyright ICT4M 2020</p>

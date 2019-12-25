@@ -6,7 +6,6 @@
 body{
   font-family: sans-serif;
   box-sizing: border-box;
-
 }
 
 .nav-bar{
@@ -107,37 +106,18 @@ div[class="content"]{
   color:#696969;
 }
 
+.popup p{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-bottom: 30px;
+}
+
 div[class="gcw_mainConverter"]{
   table-layout: fixed;
   width: 600px;
   margin: 0 auto;
   background-color: #CBE3FB;
-}
-
-.toggler {
-  width: 500px;
-  height: 200px;
-  position: relative;
-}
-
-button {
-  padding: inherit;
-  text-decoration: none;
-}
-
-effect {
-  width: 240px;
-  height: 170px;
-  padding: inherit;
-  position: relative;
-  background: #fff;
-}
-
-effect h3 {
-  margin: 0;
-  padding: inherit;
-  align: center;
-  text-align: center;
 }
 
 table {

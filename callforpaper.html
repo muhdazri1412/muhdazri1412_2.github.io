@@ -9,8 +9,8 @@
     ></script>
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src = "java/paper.js"></script>
   </head>
   <body>
 
@@ -51,13 +51,8 @@
 
           <img src="papers_img.jpg" alt=" ">
 
-
         <div class="content">
-        <div class="toggler">
-        <div id="effect" class="newClass effect style">
-
-
-
+          <div class="popup">
     <br><br><br>
     <br><br>
     <p>We would like to invite you to submit your papers to our <strong>
@@ -65,13 +60,14 @@
     Technology</strong> for the Muslim World 2020 (ICT4M 2020)
     to be held in Kuantan, Pahang. Areas of interest
     include, but are not limited to: </p><br><br><br>
-
-  </div>
 </div>
 
     <br><br><br>
+  </div>
 
-    <button id="button" class="effect style">Run Effect</button><br><br>
+    <script>
+      ScrollReveal().reveal('.popup', {duration:3000});
+    </script>
 
 
 
@@ -141,16 +137,8 @@
     </div>
   </div>
 
+      <script src = "java/paper.js"></script>
     <br><br>
-
-  </div>
-
-  <script src = "java/paper.js">
-
-  </script>
-
-
-
     <footer>
         <p>Copyright ICT4M 2020</p>
     </footer>

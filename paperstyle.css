@@ -127,41 +127,29 @@ text-align: left;
 padding: 5px 10px;
 }
 
-.toggler {
-  width: 500px;
-  height: 200px;
-  position: relative;
+.popup p{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-bottom: 30px;
 }
 
-button {
-  width: 100px;
-  text-align: center;
-  text-decoration: none;
-  text-decoration-style: wavy;
-  position: absolute;
-
+div[class="accordion"] {
+  background-color: #242424;
+  color: green;
+  margin-left: 150px;
+  margin-bottom: 0px;
+  cursor: pointer;
+  padding: 10px;
+  width: 80%;
+  height: 50px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  position: center;
 }
-
-effect {
-  position: relative;
-}
-
-.newClass {
-  width: 240px;
-  padding: inherit;
-  letter-spacing: 0;
-  margin: 0;
-}
-
-.anotherNewClass {
-  text-indent: 40px;
-  letter-spacing: 2;
-  width: 410px;
-  height: 100px;
-  padding: 30px;
-  margin: 10px;
-}
-
 
 footer{
   background-color: #242424;

@@ -18,7 +18,7 @@ $( function color() {
       }, 1000 );
     } else {
       $( "#effect" ).animate({
-        backgroundColor: "#fff",
+        backgroundColor: "#24281",
         color: "#000",
         width: 240
       }, 1000 );
